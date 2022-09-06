@@ -1,0 +1,89 @@
+body {
+  background-color: black;
+}
+
+header .logo {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+header .logo span {
+  font-size: 0.8rem;
+  color: green;
+}
+header ul li ul li a {
+  color: #000 !important;
+}
+header ul li a {
+  color: white !important;
+  font-size: 1rem;
+}
+
+main {
+  margin-top: 8rem;
+}
+
+.all-film .card-image .card {
+  overflow: hidden;
+}
+.all-film .card-image .card .film-image {
+  position: relative;
+  transition: 0.3s ease-in;
+}
+.all-film .card-image .card .film-image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+}
+.all-film .card-image .card .film-image:hover {
+  transform: scale(1.1);
+}
+.all-film .card-image .card .film-image:hover span {
+  font-size: 0.8rem;
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+  z-index: 2;
+  color: white;
+  opacity: 1;
+  padding: 8px;
+}
+.all-film .card-image .card .film-image img {
+  width: 100%;
+  height: 100%;
+}
+.all-film .card-image .card .film-image span {
+  font-size: 0.8rem;
+  position: absolute;
+  left: 1rem;
+  bottom: -3rem;
+  z-index: 2;
+  color: white;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  padding: 8px;
+}
+
+.show-film {
+  margin-top: 13rem;
+  margin-bottom: 8rem;
+}
+.show-film .show-fim-content .show-image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
+.login {
+  margin-bottom: 8rem;
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    margin-top: 20rem;
+  }
+}/*# sourceMappingURL=main.css.map */
